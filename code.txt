@@ -1,0 +1,17 @@
+<style>
+/* remove 000webhost banner */
+div[style="text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;display:block !important;"] {
+    display: none !important;
+    z-index: -9999999 !important;
+    visibility: hidden !important;
+}
+</style>
+
+
+<script>
+    window.addEventListener("DOMContentLoaded", function() {
+    //remove 000webhost banner
+    var adBannerElement = document.querySelector("img[alt='000webhost logo']").parentNode.parentNode;
+    adBannerElement.parentNode.removeChild(adBannerElement);
+    }, false);
+</script>
